@@ -135,3 +135,19 @@ def create_generators(batch_size, train_data_path, test_data_path, val_data_path
     )
 
     return train_generator, val_generator, test_generator
+
+
+def predict_with_model(model, img_path):
+    import tensorflow as tf
+    image = tf.io.read_file(img_path)
+    image = tf.image.decode_png(image, channels=3)
+    # Scales image by 255:
+    image = tf.image.convert_image_dtype(image, dtype=tf.float32)
+    image = tf.image.resize(image, [60, 60])  # To match target_size. (60, 60, 3)
+    image = tf.expand_dims(image, axis=0)  # Extra dimension for Input layer
+
+    predictions = model.predict(image)
+    from numpy import argmax
+    predictions = argmax(predictions)  # Index of max value
+
+    return predictions
