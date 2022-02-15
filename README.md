@@ -7,6 +7,7 @@ This project aims to predict German street signs using the [GTSRB - German Traff
 
     .
     ├── .vscode                   # Visual Studio Code configurations 
+    ├── MITDeepLearning           # Custom-made models for better understanding
     ├── Models                    # Saved trained models
     ├── README.md                 
     ├── deep_learning_models.py   # Custom made deep learning models
