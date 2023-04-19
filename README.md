@@ -15,7 +15,3 @@ This project aims to predict German street signs using the [GTSRB - German Traff
     ├── my_predictor.py           # Single image predictor
     ├── my_utils.py               # Utilities
     └── street_signs.py           # For training and testing created models
-
-
-
-> Reference: [TensorFlow for Computer Vision Course - Full Python Tutorial for Beginners](https://youtu.be/cPmjQ9V6Hbk)
