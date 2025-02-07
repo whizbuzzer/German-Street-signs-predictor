@@ -3,6 +3,8 @@
 
 This project aims to predict German street signs using the [GTSRB - German Traffic Sign Recognition Benchmark](https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign) dataset.
 
+[Reference](https://www.youtube.com/watch?v=cPmjQ9V6Hbk)
+
 ### File details:
 
     .
